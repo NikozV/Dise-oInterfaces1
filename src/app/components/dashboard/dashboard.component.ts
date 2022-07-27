@@ -12,6 +12,14 @@ export class DashboardComponent implements OnInit {
   imagen: string;
   texto: string;
   textEvent: string;
+  public usuarios= [
+    {nombre: 'Nicolas', apellido: 'Vassallo'},
+    {nombre: 'Mario', apellido: ''},
+    {nombre: 'Miguel', apellido: 'Uvilla'},
+    {nombre: '', apellido: 'Uvilla'}    
+
+  ]
+
 
   constructor() { 
     this.nombre="Nicolás"

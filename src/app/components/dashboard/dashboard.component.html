@@ -1,3 +1,18 @@
+<h1>DIRECTIVAS</h1>
+<h2>ngFor - ngIf</h2>
+
+<ul>
+    <li *ngFor="let usuario of usuarios">
+        <span *ngIf="usuario.nombre.length >0"> Nombre: {{usuario.nombre}}</span>
+        <span *ngIf="usuario.apellido.length >0"> Apellido: {{usuario.apellido}}</span>
+    </li>
+</ul>
+
+<br>
+<hr>
+<br>
+
+
 <h1>Event binding</h1>
 <h2>{{ textEvent }}</h2>
 <button (click)="cambiarTexto()">Botón</button>
