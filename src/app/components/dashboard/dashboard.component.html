@@ -1,3 +1,27 @@
+<br>
+
+<h1>COMUNICACION ENTRE COMPONENTES</h1>
+<h2>Output</h2>
+
+<p>{{texto_padre}}</p>
+<app-personas (nuevoEvento)="cTextoPadre($event)"></app-personas>
+
+<br>
+<hr>
+<br>
+
+<h2>Input</h2>
+
+<br>
+<app-personas [textoHijo]="texto_hijo" ></app-personas>
+
+<button (click)="cambiar()">Cambiar</button>
+
+
+<br>
+<hr>
+<br>
+
 <h1>DIRECTIVAS</h1>
 <h2>ngFor - ngIf</h2>
 
